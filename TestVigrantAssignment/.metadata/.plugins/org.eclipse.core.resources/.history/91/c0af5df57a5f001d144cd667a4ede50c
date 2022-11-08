@@ -1,0 +1,19 @@
+package TestVigrantAssignment;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class POMfile {
+	public POMfile(WebDriver driver1)
+	{
+		PageFactory.initElements(driver1, this);
+	}
+	@FindBy(xpath = "//a[text()='December 17, 2021 (United States)']")
+	private WebElement getimdbdate;
+	public  void getimdbdate()
+	{
+		return getimdbdate;
+	}
+}
